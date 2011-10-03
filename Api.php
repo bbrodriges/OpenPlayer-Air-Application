@@ -41,7 +41,7 @@ class Api extends \Lib\Base\App {
 					curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 					$song = curl_exec($ch);
 					curl_close($ch);
-			        echo $song;
+			        	echo $song;
 					die;
 					break;
 					
@@ -50,37 +50,6 @@ class Api extends \Lib\Base\App {
 					break;
 			}
     	}
-    }
-    
-    private function returnSound($url) {
-		//getFileSize($url);
-		/*set_time_limit(0);
-		$ch = curl_init($url);
-		curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		$song = curl_exec($ch);
-		curl_close($ch);
-        echo $song;*/
-    }
-	
-	private function getFileSize($url) {
-		/*$ch = curl_init($url);
-		curl_setopt($ch, CURLOPT_NOBODY, true);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_HEADER, true);
-		$data = curl_exec($ch);
-		curl_close($ch);
-
-		if (preg_match('/Content-Length: (\d+)/', $data, $matches)) {
-			$contentLength = (int)$matches[1];
-		}*/
-		
-		header('Last-Modified:');
-		header('ETag:');
-		header('Content-Type: audio/mpeg');
-		header('Accept-Ranges: bytes');
-		header('Content-Length: '.$contentLength);
-	}
 
 }
 
