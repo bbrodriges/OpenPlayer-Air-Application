@@ -1,0 +1,6 @@
+{
+    "server": [
+        "http://music.bonart.org.ua/",
+        "http://localhost/owp/"
+    ]
+}
