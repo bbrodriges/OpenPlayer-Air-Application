@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/2.5" minimumPatchLevel="0">
+  <id>com.owp.openwebplayer</id>
+  <versionNumber>1.0</versionNumber>
+  <versionLabel>v1.0</versionLabel>
+  <filename>OpenPlayer</filename>
+  <copyright>2011. GPL powered.</copyright>
+  <initialWindow>
+    <content>index.html</content>
+    <visible>true</visible>
+    <title>OpenPlayer</title>
+	<systemChrome>standard</systemChrome>
+	<transparent>false</transparent>
+	<minimizable>true</minimizable>
+	<maximizable>false</maximizable>
+	<resizable>false</resizable>
+	<width>500</width>
+	<height>500</height>
+	<x>150</x>
+	<y>150</y>
+  </initialWindow>
+  <supportedProfiles>desktop</supportedProfiles>
+  <installFolder>OpenPlayer</installFolder>
+  <customUpdateUI>true</customUpdateUI>
+  <allowBrowserInvocation>false</allowBrowserInvocation>
+  <icon>
+    <image16x16>icons/owp-16.png</image16x16>
+    <image32x32>icons/owp-32.png</image32x32>
+    <image48x48>icons/owp-48.png</image48x48>
+    <image128x128>icons/owp-128.png</image128x128>
+  </icon>
+</application>

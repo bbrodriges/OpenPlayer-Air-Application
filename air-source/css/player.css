@@ -1,0 +1,91 @@
+#player{
+    position: fixed;
+	bottom: -60px;
+	z-index: 988;
+	width: 480px;
+	height: 30px;
+}
+
+	#player p, #player div {
+		float: left;
+		height: 40px;
+		cursor: pointer;
+	}
+
+	#player #play{
+		width: 32px;
+		margin: 0 10px;
+	}
+		#player #play.play{
+			background: url('../icons/play32.png') no-repeat;
+		}
+		#player #play.pause{
+			background: url('../icons/pause32.png') no-repeat;
+		}
+		
+	#player #progress{
+		width: 360px;
+		margin: 4px 10px 0 0;
+		height: 25px;
+		background: #666666;
+		color: #323232;
+		text-align: center;
+		position: relative;
+	}
+	
+		#player #progress #title{
+			width: 100%;
+			z-index: 5;
+			position: absolute;
+			top: -13px;
+		}
+		
+		#player #progress #seek {
+			background: #b3b3b3;
+			width: 0%;
+			position: absolute;
+			z-index: 4;
+			top: -16px;
+			height: 25px;
+		}
+		
+		#player #progress #seekload {
+			background: #8c8c8c;
+			width: 0%;
+			position: absolute;
+			z-index: 3;
+			top: -16px;
+			height: 25px;
+		}
+	
+	#player #volume{
+		width: 32px;
+		margin: 0 10px;
+	}
+		#player #volume.level100{
+			background: url('../icons/volume100.png') no-repeat;
+		}
+		#player #volume.level60{
+			background: url('../icons/volume60.png') no-repeat;
+		}
+		#player #volume.level30{
+			background: url('../icons/volume30.png') no-repeat;
+		}
+		#player #volume.level0{
+			background: url('../icons/volume0.png') no-repeat;
+		}
+	
+	#player #loaded{
+		margin: 7px 0 0 7px;
+		font-size: 14px;
+		text-shadow: 1px 1px 1px #1a1a1a;
+		cursor: default;
+		text-align: center;
+		min-width: 16px;
+		display: none;
+		opacity: 0;
+	}
+		#player #loaded.loading{
+			margin: 10px 0 0 10px;
+			background: url('../icons/loading.gif') no-repeat;
+		}

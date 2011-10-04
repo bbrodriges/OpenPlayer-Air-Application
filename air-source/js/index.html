@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OpenPlayer</title>
+        
+        <meta charset="UTF-8"/>
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+    	<script type="text/javascript" src="js/air.js"></script>
+		<script type="text/javascript" src="js/updater.js"></script>
+        <script type="text/javascript" src="js/logic.js"></script>
+		<script type="text/javascript" src="js/settings.js"></script>
+		<script type="text/javascript" src="js/network.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		
+		<link href="./css/normalize.css" rel="stylesheet" media="all" />
+        <link href="./css/style.css" rel="stylesheet" media="all" />
+		<link href="./css/player.css" rel="stylesheet" media="all" />
+		
+        <link rel="icon" type="image/png" href="./icons/owp-16.png" />	
+    </head>
+<body>
+
+  <div id="settings">
+	<li class="search-history"><a href="#" class="disabled">История</a></li>
+	<li class="repeat-mode"> | <a href="#" class="disabled">Играть последовательно</a></li>
+  </div>
+
+  <p class="clearer"></p>
+  
+  <input type="text" id="searchField" class="disabled" disabled="disabled"><input type="button" value="Искать" id="searchRequest" class="disabled" disabled="disabled">
+  
+  <p class="clearer 20"></p>
+  
+  <p class="additionalBorderTop"></p>
+  <div id="songsHolder"></div>
+  <p class="additionalBorderBottom"></p>
+  
+  <div id="player">
+	<p id="play" class="play"></p>
+	<div id="progress">
+		<p id="title"></p>
+		<p id="seek"></p>
+		<p id="seekload"></p>
+	</div>
+	<p id="volume" class="level100"></p>
+	<p id="loaded" class="loading"></p>
+  </div>
+  
+  <!--ABSOLUTELY POSITIONED ELEMENTS-->
+  
+  <p id="noSearchMessage"><img src="../icons/loader.gif"><br>&nbsp;&nbsp;Поиск сервера...</p>
+  
+  <div id="update-available">
+	<h2 class="title">Доступно обновление!</h2>
+	<p class="text">Версия <b class="version"></b> доступна для скачивания. Новое в этой версии:</p>
+	<p class="notes"></p>
+	<div class="progress">
+		<p class="button update">Загрузить</p><p class="button cancel">Не сейчас</p>
+	</div>
+  </div>
+  
+  <div id="version"></div>
+  
+</body>
+</html>
