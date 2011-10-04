@@ -9,6 +9,11 @@ class Api extends \Lib\Base\App {
     public function init() {
     	if(Request::get('method')) {
 			switch(Request::get('method')) {
+				case 'ping':
+					echo '{"result":"enabled"}';
+					die;
+					break;
+					
 				case 'search':
 					$result = \Lib\AudioParser::search($_GET['query'], 0);
 					echo json_encode($result);
@@ -50,6 +55,7 @@ class Api extends \Lib\Base\App {
 					break;
 			}
     	}
+	}
 
 }
 
