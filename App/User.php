@@ -155,7 +155,7 @@ class User extends \Lib\Base\Manager {
 		$res = $this->updateSettings( $settings );
     }
 	
-	public function confirm ( $login, $password ) { // API confirm method
+	public function confirm ( $login, $password ) { // API confirm method.
 		if ( !$login ) return false;
 	
 		$login = strip_tags($login);

@@ -59,9 +59,6 @@ class Api extends \Lib\Base\App {
 					die;
 					break;
 					
-					die;
-					break;
-					
 				default:
 					die;
 					break;
