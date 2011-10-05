@@ -2,7 +2,8 @@
 
 namespace App;
 
-use \Lib\Request;
+use \Lib\Request,
+	\Manager\User;
 
 class Api extends \Lib\Base\App {
 
@@ -47,6 +48,17 @@ class Api extends \Lib\Base\App {
 					$song = curl_exec($ch);
 					curl_close($ch);
 			        	echo $song;
+					die;
+					break;
+					
+				case 'userconfirm':
+					$usermanager = new User;
+					echo $usermanager->confirm(
+						Request::get('login'), Request::get('md5password')
+					);
+					die;
+					break;
+					
 					die;
 					break;
 					
